@@ -542,6 +542,10 @@ p {
     display: flex;
 }
 .main-footer .navbar .nav-items .nav-item {
+    list-style: none;
+    padding-bottom: 30px;
+}
+.main-footer .navbar .nav-items .nav-item a {
 	font-family: 'RalewayRegular';
     font-style: normal;
     font-weight: 400;
@@ -549,8 +553,7 @@ p {
     line-height: 16px;
     color: #000000;
     text-shadow: -36px 4px 53px #F900FE;
-    padding-bottom: 30px;
-    list-style: none;
+    text-decoration: none;
 }
 .main-footer .navbar .nav-items .nav-item:before {
 	content: '';
