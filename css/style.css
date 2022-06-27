@@ -70,13 +70,16 @@ p {
 	gap: 42px;
 }
 .main-header .navbar .nav-menu .nav-items .nav-item {
+    list-style: none;
+}
+.main-header .navbar .nav-menu .nav-items .nav-item a {
 	font-family: 'AvenirRegular';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #000000;
-	list-style: none;
+    text-decoration: none;
 }
 .main-header .home {
 	display: flex;
@@ -112,13 +115,14 @@ p {
     border: unset;
     cursor: pointer;
 }
-.main-header .home .content-1 .add_chrome span {
+.main-header .home .content-1 .add_chrome a {
 	font-family: 'AvenirRegular';
     font-style: normal;
     font-weight: 750;
     font-size: 18px;
     line-height: 22px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 .main-header .home .content-1 .add_app {
 	display: flex;
@@ -140,7 +144,7 @@ p {
     border: 1px solid #7AC3D3;
     filter: blur(4px);
     border-radius: 0px 305px 305px 0px;
-    width: 39%;
+    width: 36rem;
     height: 77px;
     top: 9rem;
 }
@@ -380,7 +384,7 @@ p {
     border: 1px solid #7AC3D3;
     filter: blur(4px);
     border-radius: 32px 0px 0px 32px;
-    width: 39%;
+    width: 36rem;
     height: 117px;
     top: 18rem;
     right: 1px;
@@ -431,13 +435,14 @@ p {
     border: unset;
     cursor: pointer;
 }
-.section__5 .contents  .content__desc .sign span {
+.section__5 .contents  .content__desc .sign a {
 	font-family: 'RalewaySemiBold';
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+    text-decoration: none;
 }
 .section__6 {
 	padding-top: 224px;
