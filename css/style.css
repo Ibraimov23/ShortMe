@@ -606,7 +606,8 @@ p {
     .section__1{padding-top: 35px;}
     .section__1 .__header{font-size: 20px;font-weight: 800;font-family: 'PPTelegrafBold';}
     .section__1 .contents{display: block;margin: auto;margin-top: 44px;width: 80%;}
-    .section__1 .contents .content{padding-top: 24px;width: unset;margin: auto;margin-bottom: 52px;}
+    .section__1 .contents .content{padding-top: 30px;width: unset;margin: auto;margin-bottom: 52px;height: 190px;border-radius: 37px;}
+    .section__1 .contents .content .text{padding-top: 14px;}
     .section__1 .line__style{display: none;}
     .section__2{padding-top: 0px;}
     .section__2 .contents .blocks{gap:57px;}
@@ -617,7 +618,7 @@ p {
     .section__2 .contents .content__desc .blocks .block .data img{height: 81px;}
     .section__2 .contents .content__desc .blocks .data .text{font-size: 18px;}
     .section__2 .contents .content__picture {padding-top: 57px;margin:auto;order: 2;}
-    .section__2 .contents .content__picture img{width: 211px;height: 275px;}
+    .section__2 .contents .content__picture img{height: 275px;}
     .section__3{padding-top: 82px;}
     .section__3 .contents{box-shadow: -4px -4px 119px #e7e7e7;border-radius: 6px;max-width: max-content;padding-bottom: 17px;padding-top: 27px;border: unset;}
     .section__3 .contents .__header{font-size: 18px;}
