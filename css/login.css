@@ -1,0 +1,186 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	padding: 0px;
+	margin: 0px;
+}
+@font-face {
+    font-family: AvenirRegular;
+    src: url("../fonts/AvenirRegular.otf");
+}
+@font-face {
+    font-family: PPTelegrafBold;
+    src: url("../fonts/PPTelegrafBold.otf");
+}
+@font-face {
+    font-family: PPTelegrafRegular;
+    src: url("../fonts/PPTelegrafRegular.otf");
+}
+@font-face {
+    font-family: RalewayRegular;
+    src: url("../fonts/RalewayRegular.ttf");
+}
+@font-face {
+    font-family: RalewayMedium;
+    src: url("../fonts/RalewayMedium.ttf");
+}
+@font-face {
+    font-family: RalewayBold;
+    src: url("../fonts/RalewayBold.ttf");
+}
+@font-face {
+    font-family: RalewaySemiBold;
+    src: url("../fonts/RalewaySemiBold.ttf");
+}
+.wrapper {
+	overflow: hidden;
+}
+.container {
+	max-width: 1218px;
+	margin: 0px auto;
+}
+.main-header {
+	background: linear-gradient(107.74deg, rgba(129, 242, 109, 0.31) 13.23%,
+	rgba(254, 226, 1, 0.265) 44.37%, rgba(188, 55, 190, 0.29) 84.04%);
+	height: 100vh;
+	position: relative;
+}
+.main-header .navbar {
+	display: flex;
+	align-items: center;
+	padding-top: 5vh;
+}
+.main-header .navbar .logo img {
+	width: 5vh;
+}
+.main-header .navbar .menu {
+	flex: 1 1 auto;
+}
+.main-header .navbar .nav-menu {
+	justify-content: flex-end;
+    display: flex;
+}
+.main-header .navbar .nav-menu .nav-items {
+	display: flex;
+	gap: 42px;
+}
+.main-header .navbar .nav-menu .nav-items .nav-item {
+    list-style: none;
+}
+.main-header .navbar .nav-menu .nav-items .nav-item a {
+	font-family: 'AvenirRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+.main-header .home {
+	padding-top: 59px;
+	justify-content: center;
+    width: 100%;
+    display: grid;
+}
+.main-header .home .header {
+	font-family: 'PPTelegrafBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 42px;
+    color: #000000;
+}
+.main-header .home .desc {
+	font-family: 'RalewayMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #000000;
+    padding-top: 39px;
+}
+.main-header .home .login__data {
+    text-align: center;
+    margin-top: 49px;
+}
+.main-header .home .login__data .button__text {
+	background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 13px;
+    width: 100%;
+    padding: 2.4vh 4.4vh 2.4vh 3.4vh;
+}
+.main-header .home .login__data .password {
+	margin-top: 49px;
+}
+.main-header .home .login__data .button__text::placeholder{
+	font-family: 'RalewayMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #737171;
+}
+.main-header .home .login__data .remember {
+	padding-top: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+.main-header .home .login__data .remember .button__check {
+    background: url(../assets/button__check.png) no-repeat;
+    width: 20px;
+    height: 20px;
+}
+.main-header .home .login__data .remember .text {
+    font-family: 'RalewayMedium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.8vh;
+    line-height: 26px;
+    color: #000000;
+}
+.main-header .home .login__data .button__sumbit {
+	background: #BC37BE;
+    box-shadow: 0px 0px 50px 1px #FFFFFF;
+    border-radius: 43px;
+    padding: 2vh 0px 2vh 0px;
+    width: 48%;
+    margin-top: 35px;
+    border: unset;
+    cursor: pointer;
+}
+.main-header .home .login__data .button__sumbit span {
+	font-family: 'AvenirRegular';
+    font-style: normal;
+    font-weight: 750;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 1300px) {
+    .container {
+    	max-width: 1100px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main-header {padding-bottom: 8px;}
+    .container{max-width: 280px;}
+    .main-header .navbar .nav-menu{display: none;}
+    .main-header .home{text-align: center;}
+    .main-header .home .header{font-size: 18px;line-height: 19px;}
+    .main-header .home .desc{font-size: 14px;padding-top: 10px;}
+    .main-header .home .login__data{margin-top: 28px;}
+    .main-header .home .login__data .button__text{padding: 8px 0px 8px 17px;width: 82%;}
+    .main-header .home .login__data .password{margin-top: 13px;}
+    .main-header .home .login__data .remember{gap: 5px;padding-top: 10px;}
+    .main-header .home .login__data .remember .button__check{width: 11px;height: 11px;}
+    .main-header .home .login__data .remember .button__check img{width: 10px;height: 15px;}
+    .main-header .home .login__data .button__text::placeholder{font-family: 'AvenirRegular';font-size: 12px;font-weight: 400;}
+    .main-header .home .login__data .remember .text{font-size: 12px;}
+    .main-header .home .login__data .button__sumbit{width: 40%;padding: 1.5vh 0px 1.5vh 0px;margin-top: 21px;}
+    .main-header .home .login__data .button__sumbit span{font-size: 14px;font-family: 'RalewayMedium';font-weight: 500;}
+}

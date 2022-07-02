@@ -56,7 +56,7 @@ p {
 .main-header .navbar {
 	display: flex;
 	align-items: center;
-	padding-top: 10px;
+    padding-top: 5vh;
 }
 .main-header .navbar .menu {
 	flex: 1 1 auto;

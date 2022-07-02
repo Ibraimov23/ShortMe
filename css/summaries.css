@@ -1,0 +1,171 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	padding: 0px;
+	margin: 0px;
+}
+@font-face {
+    font-family: AvenirRegular;
+    src: url("../fonts/AvenirRegular.otf");
+}
+@font-face {
+    font-family: PPTelegrafBold;
+    src: url("../fonts/PPTelegrafBold.otf");
+}
+@font-face {
+    font-family: PPTelegrafRegular;
+    src: url("../fonts/PPTelegrafRegular.otf");
+}
+@font-face {
+    font-family: RalewayRegular;
+    src: url("../fonts/RalewayRegular.ttf");
+}
+@font-face {
+    font-family: RalewayMedium;
+    src: url("../fonts/RalewayMedium.ttf");
+}
+@font-face {
+    font-family: RalewayBold;
+    src: url("../fonts/RalewayBold.ttf");
+}
+@font-face {
+    font-family: RalewaySemiBold;
+    src: url("../fonts/RalewaySemiBold.ttf");
+}
+.wrapper {
+}
+.container {
+	max-width: 1218px;
+	margin: 0px auto;
+}
+.main-header {
+	background: linear-gradient(107.74deg, rgba(129, 242, 109, 0.31) 13.23%,
+	rgba(254, 226, 1, 0.265) 44.37%, rgba(188, 55, 190, 0.29) 84.04%);
+    padding-bottom: 1px;
+	position: relative;
+}
+.main-header .line__style {
+    position: absolute;
+    bottom: 49.5rem;
+    left: 1px;
+    z-index: -1;
+}
+.main-header .line__style::before {
+    content: '';
+    position: absolute;
+    background: #C1F8B0;
+    width: 43rem;
+    height: 77px;
+    z-index: -1;
+    border-radius: 0px 305px 305px 0px;
+}
+.main-header .navbar {
+	display: flex;
+	align-items: center;
+	padding-top: 5vh;
+}
+.main-header .navbar .logo img {
+	width: 5vh;
+}
+.main-header .navbar .menu {
+	flex: 1 1 auto;
+}
+.main-header .navbar .nav-menu {
+	justify-content: flex-end;
+    display: flex;
+}
+.main-header .navbar .nav-menu .nav-items {
+	display: flex;
+	gap: 42px;
+}
+.main-header .navbar .nav-menu .nav-items .nav-item {
+    list-style: none;
+}
+.main-header .navbar .nav-menu .nav-items .nav-item a {
+	font-family: 'AvenirRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+.main-header .home {
+    padding-top: 70px;
+    justify-content: left;
+    width: 100%;
+}
+.main-header .home .header {
+	font-family: 'PPTelegrafBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 42px;
+    color: #000000;
+}
+.main-header .home .contents {
+    margin-top: 125px;
+}
+.main-header .home .contents .content {
+    background: #FEF673;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+.main-header .home .contents .content .card__img img {
+    width: 100%;
+}
+.main-header .home .contents .content .card__text {
+    padding-left: 25px;
+    width: 65%;
+}
+.main-header .home .contents .content .card__text .text__desc {
+    font-family: 'RalewayRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.001em;
+    color: #000000;
+    height: 60px;
+}
+.main-header .home .contents .content .card__text .text__date {
+    font-family: 'RalewayRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.001em;
+    color: #000000;
+}
+.main-header .home .contents .content .card__share {
+    margin-left: auto;
+    padding-right: 42px;
+    gap: 36px;
+    display: flex;
+}
+@media only screen and (max-width: 1300px) {
+    .container {
+    	max-width: 1100px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main-header {padding-bottom: 8px;}
+    .container{max-width: 280px;}
+    .main-header .line__style{display: none;}
+    .main-header .navbar .nav-menu{display: none;}
+    .main-header .home{text-align: center;max-width: unset !important;}
+    .main-header .home .header{font-size: 24px;line-height: 25px;text-align: left;}
+    .main-header .home .contents{margin-top: 12px;}
+    .main-header .home .contents .content{align-items: unset;}
+    .main-header .home .contents .content .card__img img{width: 66%;height: 62px;}
+    .main-header .home .contents .content .card__text{padding-left: 0px;width: 70%;padding-top: 7px;position: relative;right: 0.5rem;padding-bottom: 8px;}
+    .main-header .home .contents .content .card__text .text__desc{font-size: 14px;line-height: 17px;height: unset;text-align: left;}
+    .main-header .home .contents .content .card__text .text__date{font-size: 12px;padding-top: 21px;text-align: left;}
+    .main-header .home .contents .content .card__share{position: absolute;bottom: 9px;gap: 12px;right: 1px;padding-right: 0.5rem;}
+    .main-header .home .contents .content .card__share img{width: 22px;height: 14px;} 
+}
