@@ -1,0 +1,182 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+p {
+	padding: 0px;
+	margin: 0px;
+}
+@font-face {
+    font-family: AvenirRegular;
+    src: url("../fonts/AvenirRegular.otf");
+}
+@font-face {
+    font-family: PPTelegrafBold;
+    src: url("../fonts/PPTelegrafBold.otf");
+}
+@font-face {
+    font-family: PPTelegrafRegular;
+    src: url("../fonts/PPTelegrafRegular.otf");
+}
+@font-face {
+    font-family: RalewayRegular;
+    src: url("../fonts/RalewayRegular.ttf");
+}
+@font-face {
+    font-family: RalewayMedium;
+    src: url("../fonts/RalewayMedium.ttf");
+}
+@font-face {
+    font-family: RalewayBold;
+    src: url("../fonts/RalewayBold.ttf");
+}
+@font-face {
+    font-family: RalewaySemiBold;
+    src: url("../fonts/RalewaySemiBold.ttf");
+}
+.wrapper {
+}
+.container {
+	max-width: 1218px;
+	margin: 0px auto;
+}
+.main-header {
+	height: 100%;
+	position: relative;
+    padding-bottom: 15vh;
+}
+.main-header .navbar {
+	display: flex;
+	align-items: center;
+	padding-top: 5vh;
+    gap: 143px;
+}
+.main-header .navbar .logo img {
+	width: 5vh;
+}
+.main-header .navbar .menu {
+	flex: 1 1 auto;
+}
+.main-header .navbar .nav-menu {
+	justify-content: flex-start;
+    display: flex;
+}
+.main-header .navbar .nav-menu .nav-items {
+	display: flex;
+	gap: 42px;
+}
+.main-header .navbar .nav-menu .nav-items .nav-item {
+    list-style: none;
+}
+.main-header .navbar .nav-menu .nav-items .nav-item a {
+	font-family: 'AvenirRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none;
+}
+.main-header .navbar .nav-menu .nav-items .active a {
+    font-weight: 750;
+}
+.main-header .navbar .nav-menu .nav-items .logout a {
+    text-decoration: underline;
+    text-decoration-color: #F900FE;
+}
+.main-header .home {
+	padding-top: 140px;
+	justify-content: left;
+    width: 100%;
+    display: grid;
+}
+.main-header .home .header {
+	font-family: 'PPTelegrafRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 47px;
+    color: #000000;
+}
+.main-header .home .contents {
+    display: flex;
+    padding-top: 27px;
+    gap: 15px;
+}
+.main-header .home .contents .content__header .text {
+   font-family: 'AvenirRegular';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 130%;
+   color: #000000;
+}
+.main-header .home .contents .content__header .text2 {
+    padding-top: 25px;
+}
+.main-header .home .contents__text {
+    padding-top: 10px;
+}
+.main-header .home .contents__text .text {
+   font-family: 'AvenirRegular';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 130%;
+   color: #000000;
+}
+.main-header .home .contents__text .text2 {
+    padding-top: 25px;
+}
+.main-header .home .link {
+    font-family: 'AvenirRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    padding-top: 65px;
+}
+.main-header .home .link span {
+    font-weight: 750;
+}
+.main-header .home .desc {
+    padding-top: 50px;
+}
+.main-header .home .contents__desc {
+    padding-top: 14px;
+    display: flex;
+    gap: 23px;
+    align-items: center;
+}
+.main-header .home .contents__desc .text {
+    font-family: 'AvenirRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.001em;
+    color: #000000;
+}
+@media only screen and (max-width: 1300px) {
+    .container {
+    	max-width: 1100px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main-header {padding-bottom: 8vh}
+    .container{max-width: 280px;}
+    .main-header .navbar .nav-menu{display: none;}
+    .main-header .home{padding-top: 56px;display: block;}
+    .main-header .home .header{font-size: 24px;line-height: 25px;}
+    .main-header .home .contents{display: block;padding-top: 13px;}
+    .main-header .home .contents .content__img img {width: 100%;}
+    .main-header .home .contents .content__header{padding-top: 24px;}
+    .main-header .home .contents .content__header .text{font-size: 14px;line-height: 18px;}
+    .main-header .home .contents .content__header .text2{padding-top: 20px;}
+    .main-header .home .contents__text{display: none;}
+    .main-header .home .link{font-size: 14px;line-height: 14px;padding-top: 30px;word-wrap: break-word;}
+    .main-header .home .desc{padding-top: 20px;font-size: 18px;line-height: 19px;}
+    .main-header .home .contents__desc{padding-top: 8px;gap: 8px;}
+    .main-header .home .contents__desc .text{font-size: 14px;line-height: 17px;}
+}
