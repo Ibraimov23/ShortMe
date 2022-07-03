@@ -154,7 +154,7 @@ p {
     }
 }
 @media only screen and (max-width: 600px) {
-    .main-header {padding-bottom: 8px;}
+    .main-header {height: 100vh;}
     .container{max-width: 280px;}
     .main-header .line__style{display: none;}
     .main-header .navbar .nav-menu{display: none;}

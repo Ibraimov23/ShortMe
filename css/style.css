@@ -51,7 +51,7 @@ p {
     border-radius: 0px 305px 305px 0px;
     width: 42rem;
     height: 77px;
-    top: 11rem;
+    bottom: 26.5rem;
 }
 .main-header .navbar {
 	display: flex;
