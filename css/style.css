@@ -58,7 +58,7 @@ p {
 	align-items: center;
     padding-top: 5vh;
 }
-.main-header .navbar .hamburger-menu {
+.main-header .navbar .nav-burger {
     display: none;
 }
 .main-header .navbar .menu {
@@ -593,14 +593,31 @@ p {
     	max-width: 1100px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+    .body.active{overflow: hidden;}
     .main-header {padding-bottom: 8px;}
     .container{max-width: 280px;}
     .main-header .home{display: block;}
     .main-header .navbar{padding-top: 27px;}
-    .main-header .navbar .logo img{width: 27px;}
-    .main-header .navbar .nav-menu .nav-items{display: none;}
-    .main-header .navbar .hamburger-menu{display: block;}
+    .main-header .navbar .logo img{width: 27px;position: relative;z-index: 4;}
+    .main-header .navbar .nav-menu{display: none;}
+    .main-header .navbar .nav-burger{display: block;position: relative;width: 16px;height: 14px;margin-left: auto;}
+    .main-header .navbar .nav-burger:before,.main-header .navbar .nav-burger:after{content: '';background-color: #000;position: absolute;width: 100%;height: 2px;left: 0px;
+    z-index: 4;transition: all 0.3s ease 0s;}
+    .main-header .navbar .nav-burger:before{top: 4px;}
+    .main-header .navbar .nav-burger:after{bottom: 0px;}
+    .main-header .navbar .nav-burger span{background-color: #000;position: absolute;left: 0;width: 100%;height: 2px;top: -3px;z-index: 4;transition: all 0.3s ease 0s;}
+    .main-header .navbar .nav-burger.active:after{transform: rotate(-48deg);bottom: 6px;}
+    .main-header .navbar .nav-burger.active:before{transform: rotate(48deg);top: 6px;}
+    .main-header .navbar .nav-burger.active span{transform: scale(0);}
+    .main-header .navbar .burger-menu{position: fixed;top: 0;right: -100%;width: 100%;height: 100%;
+    background: url(../assets/index__fon.jpg) no-repeat;background-size: cover;z-index: 3;z-index: 3;padding: 75px 0px 0px 0px;transition: all 0.3s ease 0s;}
+    .main-header .navbar .burger-menu.active{right: 0;}
+    .main-header .navbar .burger-menu .nav-items .nav-item{list-style: none;margin-bottom: 14px;}
+    .main-header .navbar .burger-menu .nav-items .nav-item:before{content: '';background: url(../assets/arrow.svg) no-repeat;width: 6.79px;
+    height: 10.19px;display: inline-block;margin-right: 0.6rem;background-position: center;background-size: cover;margin-bottom: 1px;}
+    .main-header .navbar .burger-menu .nav-items .nav-item a {font-family: 'AvenirRegular';font-style: normal;
+    font-weight: 400;line-height: 29px;color: #000000;text-decoration: none;font-size: 24px;}
     .main-header .home .content-2{position: unset;padding-top: 3px;}
     .main-header .home .content-2 img {width: 90%}
     .main-header .home .content-1 .home__header{padding-top: 1px;}

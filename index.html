@@ -6,7 +6,7 @@
 	<title>Home</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body">
 	<div class="wrapper">
 		<header class="main-header">
 			<div class="container">
@@ -14,6 +14,17 @@
 				    <a class="logo">
 				     	<img src="assets/logo.svg" />
 			  	    </a>
+                    <div class="nav-burger">
+                        <span></span>
+                    </div>
+                    <nav class="burger-menu">
+                        <ul class="nav-items">
+                            <li class="nav-item"><a href="#">Home</a></li>
+                            <li class="nav-item"><a href="https://shortme.site/site/about">About</a></li>
+                            <li class="nav-item"><a href="https://shortme.site/site/signup">Sign up</a></li>
+                            <li class="nav-item"><a href="https://shortme.site/site/login">Login</a></li>
+                        </ul>
+                    </nav>
 			 	    <nav class="nav-menu menu">
 					    <ul class="nav-items">
 					       <li class="nav-item"><a href="#">Home</a></li>
@@ -198,5 +209,13 @@
 		</div>
 	</footer>
    </div>
+   <script src="./js/jquery-3.4.1.min.js"></script>
+   <script type="text/javascript">
+       $(document).ready(function(){
+          $('.nav-burger').click(function(event){
+            $('.body,.nav-burger,.burger-menu').toggleClass('active');
+          });
+       });
+   </script>
 </body>
 </html>

@@ -154,7 +154,7 @@ p {
     	max-width: 1100px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .main-header {height: 100vh;}
     .container{max-width: 280px;}
     .main-header{background: url(../assets/backSummary.jpg);background-size: cover;}

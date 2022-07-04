@@ -166,7 +166,7 @@ p {
     	max-width: 1100px;
     }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .main-header {padding-bottom: 8vh;background: url(../assets/backSummary.jpg);background-size: cover;}
     .container{max-width: 280px;}
     .main-header .navbar .nav-menu{display: none;}
