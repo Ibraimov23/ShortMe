@@ -41,6 +41,9 @@ p {
 	margin: 0px auto;
 }
 .main-header {
+    background: url(../assets/login__fon.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
 	height: 100%;
 	position: relative;
     padding-bottom: 15vh;
@@ -164,7 +167,7 @@ p {
     }
 }
 @media only screen and (max-width: 600px) {
-    .main-header {padding-bottom: 8vh}
+    .main-header {padding-bottom: 8vh;background: url(../assets/backSummary.jpg);background-size: cover;}
     .container{max-width: 280px;}
     .main-header .navbar .nav-menu{display: none;}
     .main-header .home{padding-top: 56px;display: block;}

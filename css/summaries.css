@@ -41,9 +41,10 @@ p {
 	margin: 0px auto;
 }
 .main-header {
-	background: linear-gradient(107.74deg, rgba(129, 242, 109, 0.31) 13.23%,
-	rgba(254, 226, 1, 0.265) 44.37%, rgba(188, 55, 190, 0.29) 84.04%);
-    padding-bottom: 1px;
+	background: url(../assets/login__fon.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 15vh;
 	position: relative;
 }
 .main-header .line__style {
@@ -156,9 +157,10 @@ p {
 @media only screen and (max-width: 600px) {
     .main-header {height: 100vh;}
     .container{max-width: 280px;}
+    .main-header{background: url(../assets/backSummary.jpg);background-size: cover;}
     .main-header .line__style{display: none;}
     .main-header .navbar .nav-menu{display: none;}
-    .main-header .home{text-align: center;max-width: unset !important;}
+    .main-header .home{text-align: center;max-width: unset !important;padding-top: 56px;}
     .main-header .home .header{font-size: 24px;line-height: 25px;text-align: left;}
     .main-header .home .contents{margin-top: 12px;}
     .main-header .home .contents .content{align-items: unset;}
